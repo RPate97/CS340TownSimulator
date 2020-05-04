@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CS340 Town Simulator</h1>
+        <h2>Edit Runswick</h2>
+        <h4>
+            <a href="/~pater/index.html">Back</a>
+        </h4>    
+        <h2>Runswick NPCs</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Greeting</th>
+                <th>Found in</th>
+            </tr>
+            <tr>
+                <td>Jacob the tanner</td>
+                <td>Hello there, what can I do for you? I'd really rather see you around my shop why don't you come by sometime?</td>
+                <td>Tavern, Tannery</td>
+            </tr>
+            <tr>
+                <td>Nezeim Bhammein</td>
+                <td>Hello traveler, good to see new faces around the town every now and then.</td>
+                <td>Tavern, Fishmarket</td>
+            </tr>
+            <tr>
+                <td>Althea the sorceror</td>
+                <td>Hmm, perhaps I can find a use for a fighter like you..</td>
+                <td>Tavern</td>
+            </tr>
+        </table>
+        <h3>Add an NPC</h3>
+        <form>
+            <label for="npcName">NPC Name:</label><br>
+            <input type="text" id="npcName" name="npcName"><br>
+            <label for="greeting">Greeting:</label><br>
+            <input type="text" id="greeting" name="greeting"><br>
+            <label for="foundin">Found in:</label><br>
+            <input type="checkbox" id="tavern" name="foundin" value="tavern">
+            <label for="tavern">Tavern</label><br>
+            <input type="checkbox" id="fishmarket" name="foundin" value="fishmarket">
+            <label for="tavern">Fishmarket</label><br>
+            <input type="checkbox" id="tannery" name="foundin" value="tannery">
+            <label for="tavern">Tannery</label><br>
+            <input type="checkbox" id="generalStore" name="foundin" value="generalStore">
+            <label for="tavern">General Store</label><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>Add an NPC to a Shop</h3>
+        <form>
+            <label for="npc">Add NPC</label>
+            <select id="npc">
+                <option value="jacob_the_tanner">Jacob the tanner</option>
+                <option value="nezeim_bhammein">Nezeim Bhammein</option>
+                <option value="althea_the_sorceror">Althea the sorceror</option>
+            </select>
+            <label for="shop">to Shop</label>
+            <select id="shop">
+                <option value="tavern">Tavern</option>
+                <option value="fishmarket">Fishmarket</option>
+                <option value="tannery">Tannery</option>
+                <option value="general_store">General Store</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Runswick Quests</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Reward</th>
+                    <th>Given by</th>
+                </tr>
+                <tr>
+                    <td>Hunt local poachers</td>
+                    <td>A band of poachers have been killing the local wildlife without regard for the law. Hunt them down and you'll receive a mighty reward.</td>
+                    <td>Anything you can loot from their hideout plus 150 gold pieces.</td>
+                    <td>Jacob the Tanner</td>
+                </tr>
+                <tr>
+                    <td>Protect Nezeim's trading caravan from bandits.</td>
+                    <td>Recently bandits have made Nezeim's trading operation difficult to maintain. Go along with one of his caravans, protect it from bandit attack, and you'll receive a portion of the caravan profits.</td>
+                    <td>10% of the caravans profits.</td>
+                    <td>Nezeim Bhammein</td>
+                </tr>
+            </table>
+            <h3>Add a Quest</h3>
+            <form>
+                <label for="questName">Quest Name:</label><br>
+                <input type="text" id="questName" name="questName"><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                <label for="reward">Reward:</label><br>
+                <input type="text" id="reward" name="reward"><br>
+                <label for="givenby">Given by:</label><br>
+                <select id="npc">
+                    <option value="jacob_the_tanner">Jacob the tanner</option>
+                    <option value="nezeim_bhammein">Nezeim Bhammein</option>
+                    <option value="althea_the_sorceror">Althea the sorceror</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+            <h3>Add Quest to NPC</h3>
+            <form>
+                <label for="shop">Add Quest</label>
+                <select id="shop">
+                    <option value="1">Protect Nezeim's trading caravan from bandits</option>
+                    <option value="2">Hunt local poachers</option>
+                </select>
+                <label for="npc">to NPC</label>
+                <select id="npc">
+                    <option value="jacob_the_tanner">Jacob the tanner</option>
+                    <option value="nezeim_bhammein">Nezeim Bhammein</option>
+                    <option value="althea_the_sorceror">Althea the sorceror</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>

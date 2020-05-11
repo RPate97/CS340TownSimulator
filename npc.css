@@ -4,7 +4,6 @@
     position: relative;
     border-style: groove;
     width: 42%;
-    left: 24%;
     top: 20%;
 }
 
@@ -14,7 +13,6 @@
     position: relative;
     border-style: groove;
     width: 42%;
-    left: 24%;
     top: 35%;
 }
 
@@ -24,7 +22,7 @@
 
 #boxes{
     width: 33%;
-    left: 18%;
+    left: 42%;
     position: absolute;
     top: 25%;
 }
